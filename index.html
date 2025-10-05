@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Ex 02 Palladino</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+
+  <style>
+ 
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #000000, #05043a);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 3rem;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .button-container {
+      display: flex;
+      gap: 2rem;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 1rem 3rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-decoration: none;
+      text-align: center;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      border: 1.5px solid rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    a.button:hover {
+    
+      background: rgba(250, 48, 48, 0.199);
+      border-color: rgba(240, 0, 0, 0.288);
+      box-shadow: 0 12px 40px rgba(255, 0, 0, 0.3);
+      color: #ff0303;
+      transform: scale(1.1); 
+  transition: font-size 0.3s ease;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      body {
+      background: linear-gradient(14444445deg, #fb0000, #01011e);
+      color: #ffffff;
+    }
+     
+        h1 {
+        font-size: 2rem;
+      }
+
+      .button-container {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      a.button {
+        font-size: 1.2rem;
+        padding: 0.8rem 2rem;
+      }
+
+     a.button:hover {
+        background: rgba(255, 255, 255, 0.3);
+      border-color: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 12px 40px rgba(255, 255, 255, 0.3);
+      color: #ffffff;
+        font-size: 1.4em;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>Ex 02 - p5.js</h1>
+
+  <div class="button-container">
+    <a href="disegna.html" class="button" role="button" >disegna</a>
+    <a href="guarda.html" class="button" role="button" >guarda</a>
+  </div>
+</body>
+</html>
