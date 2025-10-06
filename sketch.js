@@ -13,7 +13,7 @@ let slider;
 let penColor;
 
 function setup() { 
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight - 50);
   angleMode(DEGREES);
   background(255);
   penColor = color(0);
@@ -30,10 +30,6 @@ function setup() {
   // Creating the clear screen button
   clearButton = createButton('clear');
   clearButton.mousePressed(clearScreen);
-
-  // Creating the button for Full Screen
-  fullscreenButton = createButton('Full Screen');
-  fullscreenButton.mousePressed(screenFull);
 
   // Setting up the slider for the thickness of the brush
   brushSizeSlider = createButton('Brush Size Slider');
@@ -56,11 +52,6 @@ function clearScreen() {
   background(255);
 }
 
-// Full Screen Function
-function screenFull() {
-  let fs = fullscreen();
-  fullscreen(!fs);
-}
 
 // Funzione per cambiare il colore del pennarello
 function changeColor() {
